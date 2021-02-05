@@ -1,0 +1,76 @@
+﻿<Window
+
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+  Title="MainWindow" MinWidth="768" MinHeight="550" MaxWidth="1920" MaxHeight="1060" SizeToContent="WidthAndHeight" Width="750">
+
+	<Grid>
+		<TabControl Margin="10">
+			<TabItem Header="Groups">
+				<Grid Background="#FFE5E5E5" Margin="10">
+					<Grid Margin="10">
+						<GroupBox Header="GroupBox" Margin="396,10,0,10" MaxWidth="640" HorizontalAlignment="Right">
+							<Grid Margin="5">
+								<TextBox x:Name="TBx1" Height="23" Margin="10,41,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" />
+
+								<ComboBox Margin="10,159,10,0" VerticalAlignment="Top" SelectedIndex="0">
+									<ListBoxItem Content="Mail Group"/>
+									<ListBoxItem Content="User Group"/>
+								</ComboBox>
+								<ComboBox Margin="10,217,10,0" VerticalAlignment="Top" IsEditable="True">
+									<ComboBox.ContextMenu>
+										<ContextMenu/>
+									</ComboBox.ContextMenu>
+									<CheckBox Content="Checkbox1"/>
+									<CheckBox Content="Checkbox2"/>
+									<CheckBox Content="Checkbox3"/>
+								</ComboBox>
+								<Button Content="Submit" Margin="10,333,10,0" VerticalAlignment="Top"/>
+								<TextBox x:Name="TBx2" Height="23" Margin="10,100,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" />
+								<Label Content="Name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="247"/>
+								<Label Content="Email" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="247"/>
+								<Label Content="Type" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top"/>
+								<Label Content="Members" HorizontalAlignment="Left" Margin="10,186,0,0" VerticalAlignment="Top"/>
+							</Grid>
+						</GroupBox>
+					</Grid>
+					<DataGrid Margin="10,10,323,10" MinWidth="320" MinColumnWidth="40" HorizontalGridLinesBrush="#FF48A4FF" VerticalGridLinesBrush="#FFA0ADFF">
+						<DataGrid.Columns>
+							<DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Name"/>
+							<DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Email"/>
+							<DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Type"/>
+							<DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Sync"/>
+							<DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Members"/>
+						</DataGrid.Columns>
+					</DataGrid>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Contacts">
+				<Grid Background="#FFE5E5E5" Margin="10">
+					<Grid HorizontalAlignment="Left" Height="431" Margin="10,10,0,0" VerticalAlignment="Top" Width="694">
+						<Grid>
+							<GroupBox Header="GroupBox" Margin="396,10,0,10" MaxWidth="640" HorizontalAlignment="Right">
+								<Grid Margin="5">
+									<TextBox x:Name="TBx3" Height="23" Margin="10,41,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" />
+									<Button Content="Submit" Margin="10,136,10,0" VerticalAlignment="Top"/>
+									<TextBox x:Name="TBx4" Height="23" Margin="10,100,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" />
+									<Label Content="Name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="247"/>
+									<Label Content="Email" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="247"/>
+								</Grid>
+							</GroupBox>
+						</Grid>
+						<DataGrid Margin="0,0,313,0" MinWidth="320" MinColumnWidth="40" HorizontalGridLinesBrush="#FF48A4FF" VerticalGridLinesBrush="#FFA0ADFF">
+							<DataGrid.Columns>
+								<DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Name"/>
+								<DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Email"/>
+							</DataGrid.Columns>
+						</DataGrid>
+					</Grid>
+				</Grid>
+			</TabItem>
+		</TabControl>
+	</Grid>
+
+</Window>
