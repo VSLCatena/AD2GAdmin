@@ -80,10 +80,27 @@
                 </Grid>
             </TabItem>
             <TabItem Header="History"/>
+            <TabItem Header="Groups" Margin="-2,-2,-2,0">
+                <Grid Background="#FFE5E5E5" Margin="10">
+                    <Grid Margin="10">
+                        <GroupBox Header="AD-Settings" Margin="0,10,405,10" MaxWidth="640" HorizontalAlignment="Right">
+                            <Grid Margin="5">
+                                <TextBox x:Name="TBx5" Height="23" Margin="10,41,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" />
+                                <Button Content="Submit" Margin="10,333,10,0" VerticalAlignment="Top" MinWidth="20"/>
+                                <TextBox x:Name="TBx6" Height="23" Margin="10,100,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" />
+                                <Label Content="OU Mailgroup" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="247"/>
+                                <Label Content="OU Usergroup" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="247"/>
+                                <Label Content="Sync Attribute" HorizontalAlignment="Left" Margin="10,186,0,0" VerticalAlignment="Top"/>
+                                <TextBox x:Name="TBx6_Copy" Height="23" Margin="10,217,20,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" />
+                            </Grid>
+                        </GroupBox>
+                    </Grid>
+                </Grid>
+            </TabItem>
         </TabControl>
         <Menu Height="19" VerticalAlignment="Top" HorizontalContentAlignment="Right">
             <MenuItem Header="_File" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <MenuItem Header="_Exit" HorizontalContentAlignment="Left" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <MenuItem Header="_Exit" HorizontalContentAlignment="Left" HorizontalAlignment="Left" VerticalAlignment="Top" FlowDirection="RightToLeft"/>
             </MenuItem>
             <MenuItem Header="_Help" HorizontalAlignment="Left" VerticalAlignment="Top">
                 <MenuItem Header="_Get Support" HorizontalAlignment="Left" VerticalAlignment="Top"/>
